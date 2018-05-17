@@ -14,8 +14,8 @@ class List extends Component {
     const person = this.props.person
     if (this.state.day[birthday.getDay()] === day) {
       content.push(
-        <div>
-        <img src={person.photo} alt="golf"/>
+        <div className="has-text-centered person-box">
+          <img src={person.photo} alt="golf"/>
           {person.name}
         </div>
       )
